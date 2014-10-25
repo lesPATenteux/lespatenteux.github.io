@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">-->
 </head>
-<body style="padding-top: 70px;"> 
+<body style="padding-top: 70px;" onload="fade('#jumbo', 200); fade('#alert', 400)"> 
     
     <header>
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -40,11 +40,23 @@
         </nav>
     </header>
     
-    <div class="container">
-        <div class="alert alert-danger fade" id="test">
-        <button class="close" type="button" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
-        Le site est encore en période de développment. Merci de revenir plus tard.</div>
+    
+    
+    <div class="container fade" id="jumbo">
+        <div class="jumbotron">
+            <h1>Bienvenue sur le site officiel des PATenteux!</h1>
+            <p>Le site de l'équipe de l'École Secondaire de la Pointe-aux-Trembles pour la compétition de robotique FRC de Robotique First</p>
+            <p><a href="#" class="btn btn-primary btn-lg" role="button">Qui sommes-nous?</a></p>
+        </div>
     </div>
+    
+    <div class="container">
+        <div class="alert alert-danger fade" id="alert">
+            <button class="close" type="button" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
+            Le site est encore en période de développment. Merci de revenir plus tard.
+        </div>
+    </div>
+
     
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
