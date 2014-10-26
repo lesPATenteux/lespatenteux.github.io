@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Les PATenteux - Site Officiel</title>
@@ -8,13 +8,13 @@
     
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">-->
+    <link rel="stylesheet" href="assets/css/app.css">
 </head>
-<body style="padding-top: 70px;" onload="fade('#jumbo', 200); fade('#alert', 400)"> 
+<body> 
     
     <header>
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
           <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -25,22 +25,25 @@
               <a class="navbar-brand" href="#">Les PATenteux</a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
+           
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li><a href="#">Qui Sommes-Nous?</a></li>
-                <li><a href="#">Nos Mentors</a></li>
-                <li><a href="#">Nos Commanditaires</a></li>
-                <li><a href="#">FIRST</a></li>
-                <li><a href="#">La FRC</a></li>
-                <li><a href="#">À Propos</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
+                    
+                <div class="center-block">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Qui Sommes-Nous?</a></li>
+                        <li><a href="#">Nos Mentors</a></li>
+                        <li><a href="#">Nos Commanditaires</a></li>
+                        <li><a href="#">FIRST</a></li>
+                        <li><a href="#">La FRC</a></li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">À Propos</a></li>
+                </ul>
+            </div>
+          </div>
         </nav>
     </header>
-    
-    
     
     <div class="container fade" id="jumbo">
         <div class="jumbotron">
@@ -56,7 +59,6 @@
             Le site est encore en période de développment. Merci de revenir plus tard.
         </div>
     </div>
-
     
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
