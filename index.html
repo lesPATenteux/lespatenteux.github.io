@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">-->
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body> 
@@ -36,7 +35,7 @@
                     <li><a href="#">La FRC</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">À Propos</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#about_modal">À Propos</a></li>
             </ul>
             </div>
           </div>
@@ -57,6 +56,24 @@
             Le site est encore en période de développment. Merci de revenir plus tard.
         </div>
     </div>
+    
+    <div class="modal fade" id="about_modal" tabindex="-1" role="dialog" aria-labelledby="about" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fermer</span></button>
+                    <h4 class="modal-title" id="about">À Propos</h4>
+                </div>
+                <div class="modal-body">
+                    Contenu à venir
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
