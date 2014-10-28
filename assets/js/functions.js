@@ -1,7 +1,7 @@
 $(function($){
    
     $("#_who").on("click", function(){
-        alert("Ce contenu n'est pas disponible pour le moment. Merci de revenir plus tard");
+        alert("Ce contenu n'est pas disponible pour le moment. Merci de revenir plus tard.");
     });
     
     window.onload = function(){
