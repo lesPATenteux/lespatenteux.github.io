@@ -15,9 +15,18 @@
         }
     </style>
 </head>
-<body>
+<body onload="init">
+  
+  <script>
+  
+    function init(){
+      song = document.getElementById("song");
+      song.play();
+    }
+
+  </script>
    
-   <audio src="Tim%20Wilson%20-%20Booty%20Song.mp3" autoplay loop ></audio>
+   <audio src="Tim%20Wilson%20-%20Booty%20Song.mp3" autoplay loop id="song"></audio>
    
    <p>Look at that booty, show me the booty <br>
 Give me the booty, I want the the booty <br>
