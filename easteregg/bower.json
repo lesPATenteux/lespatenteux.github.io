@@ -1,0 +1,19 @@
+{
+  "name": "easteregg",
+  "version": "0.0.0",
+  "authors": [
+    "Zénon Roy <king-zed@hotmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "SoundJS": "~0.6.0"
+  }
+}
