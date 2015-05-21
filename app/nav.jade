@@ -1,0 +1,32 @@
+nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-collapse-1')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='#') Les PATenteux
+    
+    #navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li: a(href='#') Qui Sommes-Nous?
+        li: a(href='#') Notre Robot
+        li: a(href='#') Nos Mentors
+        li: a(href='#') Nos Partenaires
+        li: a(href='#') À Propos De FIRST
+        
+      ul.nav.navbar-nav.navbar-right
+        li: a(href='#', data-toggle='modal', data-target='#about-modal') À Propos
+      
+#about_modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='about', aria-hidden='true')
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal')
+          span(aria-hidden='true') &times;
+          span.sr-only Fermer
+        h4#about.modal-title À Propos
+      .modal-body Contenu à venir
+      .modal-footer
+        button.btn.btn-primary(type='button', data-dismiss='modal') Fermer
