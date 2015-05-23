@@ -17,6 +17,13 @@ knownOpts =
 
 options = minimist process.argv.slice(2), knownOpts
 
+paths =
+  bs:
+    css: 'node_modules/bootstrap/dist/css/bootstrap.min.css'
+    js: 'node_modules/bootstrap/dist/js/bootstrap.min.js'
+  animate: 'node_modules/animate.css/animate.min.css'
+  jquery: 'node_modules/jquery/dist/jquery.min.js'
+
 gulp.task 'ng', ['del:tmp'], () ->
   gulp.src 'app/js/**/*.coffee'
     .pipe $.concat 'app.coffee'
@@ -33,6 +40,9 @@ gulp.task 'js', ['ng'], () ->
     .pipe gulp.dest 'dist/js'
     .pipe $.connect.reload()
 
+  gulp.src [paths.bs.js, paths.jquery]
+    .pipe gulp.dest 'dist/js'
+
 gulp.task 'css', () ->
   gulp.src 'app/css/app.styl'
     .pipe $.stylus
@@ -40,6 +50,9 @@ gulp.task 'css', () ->
       use: [nib()]
     .pipe gulp.dest 'dist/css'
     .pipe $.connect.reload()
+
+  gulp.src [paths.bs.css, paths.animate]
+    .pipe gulp.dest 'dist/css'
 
 gulp.task 'jade', () ->
   gulp.src 'app/index.jade'
